@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import LandingPage from './components/pages/LandingPage'
-import LoginPage from './components/pages/LoginPage'
 import HomePage from './components/pages/HomePage'
 import Stocks from './components/stocks/Stocks'
 
@@ -14,7 +13,6 @@ export default function App() {
             <div>
                 <Switch>
                     <Route exact path="/" component={ LandingPage } />
-                    <Route path="/login" component={ LoginPage } />
                     <Route path="/home" component={ HomePage } />
                     <Route path="/stocks" component={ Stocks } />
                 </Switch>
@@ -26,7 +24,7 @@ export default function App() {
 
 const Footer = () => {
     return (
-        <p className="text-center" style={ FooterStyle }>Copyright <p style={{color:'red'}}><b>VENKY DARLING</b></p></p>
+        <p className="text-center" style={ FooterStyle }>Copyright <p style={{color:'red'}}><b>      DARLING</b></p></p>
     )
 }
 

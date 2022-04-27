@@ -8,7 +8,7 @@ function ModalExampleModal() {
     <Modal 
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
-      open={open}
+      open={open} 
       trigger={<Button primary floated='right' icon='line graph' content='Add Stock'></Button>}
     >
       <Modal.Header>Add Stock</Modal.Header>
@@ -34,7 +34,6 @@ function ModalExampleModal() {
         <Button color='black' onClick={() => setOpen(false)}>
           Cancel
         </Button>
-        
       </Modal.Actions>
     </Modal>
   )
