@@ -141,3 +141,11 @@ form span {
 .home-page-title {
     color: #222
 }
+
+.modal {
+    height: auto;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+}
