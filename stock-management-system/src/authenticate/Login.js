@@ -9,7 +9,7 @@ export default function LandingPage() {
     const [showloginButton, setShowloginButton] = useState(true);
     let history = useHistory();
     const onLoginSuccess = (res) => {
-        console.log('Login Success:', res.profileObj);
+        console.log('Login Success:', res);
         setShowloginButton(false);
         history.push({
             pathname: '/home',
