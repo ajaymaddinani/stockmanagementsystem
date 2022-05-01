@@ -1,6 +1,7 @@
 import React, { useState }  from 'react'
 import { useHistory } from "react-router-dom";
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
+import { Button } from 'semantic-ui-react'
 
 
 const clientId = "365309499663-se0udqcf102jspmokbqgf14non0ifuav.apps.googleusercontent.com";
@@ -27,13 +28,15 @@ export default function LandingPage() {
         <div className="buttons text-center">
         { showloginButton ?
             <GoogleLogin
-                clientId={clientId}
-                buttonText="Sign In"
+                clientId={clientId}                
                 onSuccess={onLoginSuccess}
                 onFailure={onLoginFailure}
                 cookiePolicy={'single_host_origin'}
                 isSignedIn={true}
                 redirectUri='http://localhost:3000/home'
+                render={renderProps => (
+                    <Button primary onClick={renderProps.onClick} >Signin</Button>
+                    )}
                 
             /> : null}
         </div>

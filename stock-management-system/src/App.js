@@ -24,7 +24,7 @@ export default function App() {
 
 const Footer = () => {
     return (
-        <p className="text-center" style={ FooterStyle }>Copyright <p style={{color:'red'}}><b>      DARLING</b></p></p>
+        <p className="text-center" style={ FooterStyle }>Copyright <p style={{color:'red'}}><b>SMS</b></p></p>
     )
 }
 
