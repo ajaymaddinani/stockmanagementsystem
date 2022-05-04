@@ -35,7 +35,7 @@ export default function LandingPage() {
                 isSignedIn={true}
                 redirectUri='http://localhost:3000/home'
                 render={renderProps => (
-                    <Button primary onClick={renderProps.onClick} >Signin</Button>
+                    <Button primary onClick={renderProps.onClick} >Sign in</Button>
                     )}
                 
             /> : null}
