@@ -4,10 +4,6 @@ import axios from "axios";
 
 function ModalExampleModal() {
 
-  const client = axios.create({
-    baseURL: "https://localhost:4000/stocks" 
-  });
-
   //Dummy Stocks call api to fetch this data
   const dummyStocks = [
     {
@@ -41,11 +37,6 @@ function ModalExampleModal() {
   const [open, setOpen] = React.useState(false)
   const [stocks, setStocks] =  React.useState(dummyStocks)
 
-  React.useEffect(() => {
-    client.get("/stocks").then((response) => {
-      setStocks(response.data);
-    });
-  }, []);
 
 
   const genderOptions = [
