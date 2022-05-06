@@ -10,6 +10,8 @@ import {
 import 'semantic-ui-css/semantic.min.css';
 import Stocks from '../stocks/Stocks'
 import Logout from '../../authenticate/Logout'
+import Predictions from './predictions/prediction'
+import Simulations from './simulations/simulation'
 
 export default function Home()
 {
@@ -22,7 +24,9 @@ export default function Home()
     return(
     <div>
     <Menu fixed='top' inverted>
-        <Menu.Item as='a' onClick={()=>setActiveTab('Stocks')}><Icon name='line graph' />Stocks</Menu.Item>
+        <Menu.Item as='a' onClick={()=>setActiveTab('Dashboard')}><Icon name='line graph' />Dashboard</Menu.Item>
+        <Menu.Item as='a' onClick={()=>setActiveTab('Predictions')}><Icon name='bullseye' />Predictions</Menu.Item>
+        <Menu.Item as='a' onClick={()=>setActiveTab('Simulate')}><Icon name='cogs' />Simulate</Menu.Item>
         <Menu.Item as='a'  onClick={()=>setActiveTab('Profile')}><Icon name='user' />{location.state.detail.givenName}</Menu.Item>
         <Menu.Menu position='right'>
             <Menu.Item as='a' position='right'> 
@@ -37,7 +41,9 @@ export default function Home()
     <Placeholder.Line />
     <Placeholder.Line />
     </Placeholder>
-        {tab=='Stocks' && <Stocks />}
+        {tab=='Dashboard' && <Stocks />}
+        {tab=='Predictions' && <Predictions />}
+        {tab=='Simulate' && <Simulations />}
     </div >
  
    

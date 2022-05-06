@@ -39,13 +39,6 @@ function ModalExampleModal() {
 
 
 
-  const genderOptions = [
-    { key: 'm', text: 'Male', value: 'male' },
-    { key: 'f', text: 'Female', value: 'female' },
-    { key: 'o', text: 'Other', value: 'other' },
-  ]
-
-  
   return (
     <Modal 
       onClose={() => setOpen(false)}

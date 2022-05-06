@@ -20,11 +20,11 @@ def set_environment():
     os.environ.setdefault('INSTANCE_CONNECTION_NAME',
                           'model-factor-347514:us-central1:team3db')
     os.environ.setdefault(
-        'DB_ROOT_CERT', 'C:\\Personal\\Certifications\\APCDS\\CapstoneProject\\Data_Engineering\\Setup_CloudSQL\\server-ca.pem')
+        'DB_ROOT_CERT', './Setup_CloudSQL/server-ca.pem')
     os.environ.setdefault(
-        'DB_CERT', 'C:\\Personal\\Certifications\\APCDS\\CapstoneProject\\Data_Engineering\\Setup_CloudSQL\\client-cert.pem')
+        'DB_CERT', './Setup_CloudSQL/client-cert.pem')
     os.environ.setdefault(
-        'DB_KEY', 'C:\\Personal\\Certifications\\APCDS\\CapstoneProject\\Data_Engineering\\Setup_CloudSQL\\client-key.pem')
+        'DB_KEY', './Setup_CloudSQL/client-key.pem')
 
 
 def get_last_traded_info(conn):
